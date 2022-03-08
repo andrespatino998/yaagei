@@ -226,53 +226,7 @@ $productos = $obj->Ejecutar_Instruccion("select * from productos where nombre li
         </div>
     </div>
 
-    <!--Modal para CRUD-->
-    <!-- <div class="container" align="center" id="modal" tabindex="-1" role="dialog">
-        <div>
-
-
-
-
-            <a href="" id="registrar"></a>
-            <form action="productos.php#registrar" class="jumbotron" enctype="multipart/form-data" method="post">
-                <div class="modal-body">
-                    <div hidden class="form-group">
-                        <label></label>
-                        <input hidden type="text" id="id" name="id" value="<?php echo @$prod_modificar[0]['id'] ?>">
-                        <br>
-                    </div>
-                    <div class="form-group">
-                        <label for="nombre" class="col-form-label">Nombre:</label>
-                        <input type="text" class="form-control" id="nombre" name="nombre" value="<?php echo @$prod_modificar[0]['nombre'] ?>">
-                    </div>
-                    <div class="form-group">
-                        <img style=display:<?php
-                                            if (isset($_GET['id_modificar'])) {
-                                            } else {
-                                                echo 'none';
-                                            }             ?>; id="idimagen" src="<?php echo @$prod_modificar[0]['imagen']; ?>" height="250" width="250">
-
-                        <br>
-                        <br>
-                    </div>
-                    <div class="form-group">
-                        <label for="imagen" class="col-form-label">Imagen:</label>
-                        <input class="form-control" id="imagen" name="imagen" type="file" onchange="return fileValidation()" value="<?php echo @$prod_modificar[0]['imagen'] ?>">
-                    </div>
-                    <div class="form-group">
-                        <label for="descripcion" class="col-form-label">Descripcion:</label>
-                        <input type="text" class="form-control" id="descripcion" name="descripcion" value="<?php echo @$prod_modificar[0]['descripcion'] ?>">
-                    </div>
-                    <div class="form-group">
-                        <label for="categoria" class="col-form-label">Categoria:</label>
-                        <input type="text" class="form-control" id="categoria" name="categoria" value="<?php echo @$prod_modificar[0]['categoria'] ?>">
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-dark" data-dismiss="modal">Cancelar</button>
-                    <<button type="submit" id="btnguardar" class="btn btn-success">Registrar</button> -->
-                    
-
+ 
                 </div>
             </form>
         </div>
