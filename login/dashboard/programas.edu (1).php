@@ -546,7 +546,7 @@ id="idimagen" src="<?php echo @$prog_modificar[0]['Imagen']; ?>" height="250" wi
 <td><?php echo $registro['generacion']; ?></td>
 <td><img src="<?php if(isset($registro['Imagen']))
 {
-echo $registro['Imagen'];
+$registro['Imagen'];
 }
 else
 {
