@@ -146,15 +146,15 @@ $productos = $obj->Ejecutar_Instruccion("select * from productos where nombre li
                     </div>
                     <div class="col-md-4">
                         <label for="imagen" class="col-form-label">Imagen:</label>
-                        <input class="form-control" id="imagen" name="imagen" type="file" onchange="return fileValidation()" value="<?php echo @$prod_modificar[0]['imagen'] ?>">
+                        <input class="form-control" id="imagen" name="imagen" type="file" onchange="return fileValidation()" value="<?php echo $prod_modificar[0]['imagen'];?>">
                     </div>
                     <div class="col-md-4">
                         <label for="descripcion" class="col-form-label">Descripcion:</label>
-                        <input type="text" class="form-control" id="descripcion" name="descripcion" value="<?php echo @$prod_modificar[0]['descripcion'] ?>">
+                        <input type="text" class="form-control" id="descripcion" name="descripcion" value="<?php echo $prod_modificar[0]['descripcion']; ?>">
                     </div>
                     <div class="col-md-4">
                         <label for="categoria" class="col-form-label">Categoria:</label>
-                        <input type="text" class="form-control" id="categoria" name="categoria" value="<?php echo @$prod_modificar[0]['categoria'] ?>">
+                        <input type="text" class="form-control" id="categoria" name="categoria" value="<?php echo $prod_modificar[0]['categoria'];?>">
                     </div>
                 </div>
                 <div class="modal-footer">
