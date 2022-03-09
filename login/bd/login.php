@@ -10,9 +10,9 @@ $usuario = (isset($_POST['usuario'])) ? $_POST['usuario'] : '';
 $password = (isset($_POST['password'])) ? $_POST['password'] : '';
 
 $pass = md5($password); //encripto la clave enviada por el usuario para compararla con la clava encriptada y almacenada en la BD
+$query ="SELECT correo,pass FROM usuarios WHERE correo='$usuario' AND pass='$pass'";
 
-
-$resultado = $conexion->prepare("SELECT correo,pass FROM usuarios WHERE correo='$usuario' AND pass='$pass'");
+$resultado = $conexion->prepare($query);
 $resultado->execute();
 
 if($resultado->rowCount() >= 1){
