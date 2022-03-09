@@ -115,7 +115,7 @@ $productos = $obj->Ejecutar_Instruccion("select * from productos where nombre li
     $resultado->execute();
     $data = $resultado->fetchAll(PDO::FETCH_ASSOC);
 
-    $prod_modificar[0]['categoria'] = '';
+    $prod_modificar[0]['categoria'] = array();
     ?>
 <a href="" id="registropro"></a>
 <div class="container" align="center" id="modal" tabindex="-1" role="dialog">
