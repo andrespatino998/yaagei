@@ -9,7 +9,7 @@ class BD_PDO
 		$pwd  = "";
 		$db   = "yaagei";
 	
-
+		$rows = array();
 		try {
 				$conexion = new PDO("mysql:host=$host;dbname=$db;port='8080'",$usr,$pwd);
 		       //$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
