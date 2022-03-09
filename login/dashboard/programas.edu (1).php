@@ -558,8 +558,8 @@ else
 
 		 
 
-<td align="center"><a class="btn btn-danger" href="programas.edu.php?id_eliminar=<?php echo $registro['id_pe']; ?>#buscar" onclick="return ConfirmDelete()">Eliminar</a></td>
-		<td align="center"><a class="btn btn-primary"  href="programas.edu.php?id_modificar=<?php echo $registro['id_pe'];?>#registrar">Modificar</a></td>
+<td align="center"><a class="btn btn-danger" href="programas.edu.php?id_eliminar=<?php echo @$registro['id_pe']; ?>#buscar" onclick="return ConfirmDelete()">Eliminar</a></td>
+		<td align="center"><a class="btn btn-primary"  href="programas.edu.php?id_modificar=<?php @echo $registro['id_pe'];?>#registrar">Modificar</a></td>
            </tr>  
 
 
