@@ -3,16 +3,8 @@ $Fichero = "archivo.txt";
 $ip = $_SERVER["REMOTE_ADDR"]; 
 $caducidad = 60 * 60 * 24 * 30 + time();
 
-setcookie(  
-
-    true //secure  
-);  
 if($_COOKIE["IP"] == NULL){
     
-    setcookie(  
-
-        true //secure  
-    );  
 setcookie("IP", $ip , $caducidad);
 }
 $fecha = date("Y-m-d;H:i:s"); 
