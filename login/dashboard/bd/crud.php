@@ -11,7 +11,7 @@ $password = (isset($_POST['pass'])) ? $_POST['pass'] : '';
 $privilegio = (isset($_POST['privilegio'])) ? $_POST['privilegio'] : '';
 $opcion = (isset($_POST['opcion'])) ? $_POST['opcion'] : '';
 //cifra la contraseña
-$pass = md5($password);
+$pass = sha1($password);
 
 switch ($opcion) {
     case 1: //alta
