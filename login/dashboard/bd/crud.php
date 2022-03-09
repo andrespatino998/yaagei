@@ -29,8 +29,8 @@ switch ($opcion) {
         $resultado = $conexion->prepare($consulta);
         $resultado->execute();
 
-        $consulta = "SELECT id, nombre, correo, pass, privilegio  FROM usuarios WHERE id='$id' ";
-        $resultado = $conexion->prepare($consulta);
+      
+        $resultado = $conexion->prepare('SELECT id, nombre, correo, pass, privilegio  FROM usuarios WHERE id='$id'');
         $resultado->execute();
         $data = $resultado->fetchAll(PDO::FETCH_ASSOC);
         break;
