@@ -1,21 +1,4 @@
-<?php
-$Fichero = "archivo.txt"; 
-$ip = $_SERVER["REMOTE_ADDR"]; 
-$caducidad = 60 * 60 * 24 * 30 + time();
 
-if($_COOKIE["IP"] == NULL){
-    
-setcookie("IP", $ip , $caducidad);
-}
-$fecha = date("Y-m-d;H:i:s"); 
-$sistema = $_SERVER['HTTP_USER_AGENT']; 
-$conproxy = $_SERVER["HTTP_X_FORWARDED_FOR"]; 
-$log = "FECHA: $fecha SISTEMA: $sistema IP: $ip IPPROXY: $conproxy \x0D\x0A ";
-$fp = fopen($Fichero, "a" );
-fwrite($fp, $log);
-fclose($fp);
-error_reporting(1);
-?>
 <!doctype html>
 <html>
     <head>
