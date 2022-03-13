@@ -27,7 +27,7 @@
   <link href="lib/nivo-slider/css/nivo-slider.css" rel="stylesheet">
   <link href="lib/owlcarousel/owl.carousel.css" rel="stylesheet">
   <link href="lib/owlcarousel/owl.transitions.css" rel="stylesheet">
-  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.1/css/fontawesome.min.css" rel="stylesheet">
   <link href="lib/animate/animate.min.css" rel="stylesheet">
   <link href="lib/venobox/venobox.css" rel="stylesheet">
 
